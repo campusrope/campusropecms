@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/constants",
+      "handler": "Constant.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/constants/count",
+      "handler": "Constant.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/constants/:_id",
+      "handler": "Constant.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/constants",
+      "handler": "Constant.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/constants/:_id",
+      "handler": "Constant.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/constants/:_id",
+      "handler": "Constant.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/admintasks",
+      "handler": "Admintask.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/admintasks/count",
+      "handler": "Admintask.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/admintasks/:_id",
+      "handler": "Admintask.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/admintasks",
+      "handler": "Admintask.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/admintasks/:_id",
+      "handler": "Admintask.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/admintasks/:_id",
+      "handler": "Admintask.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "constant",
+    "description": "app level constants defined here"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "states": {
+      "type": "json"
+    }
+  }
+}

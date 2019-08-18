@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "admintask",
+    "description": "to store admin tasks for an user"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "tasks": {
+      "required": true,
+      "type": "json"
+    },
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    }
+  }
+}

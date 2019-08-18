@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "helpline",
+  "info": {
+    "name": "helpline",
+    "description": "contains helpline information"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "websiteLink": {
+      "type": "string"
+    },
+    "fileOnlineComplaintLink": {
+      "type": "string"
+    },
+    "facebookLink": {
+      "type": "string"
+    },
+    "twitterLink": {
+      "type": "string"
+    },
+    "instagramLink": {
+      "type": "string"
+    },
+    "whatsappLink": {
+      "type": "string"
+    },
+    "state": {
+      "unique": true,
+      "default": "national",
+      "required": true,
+      "type": "string"
+    }
+  }
+}

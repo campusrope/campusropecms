@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/helplines",
+      "handler": "Helpline.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/helplines/count",
+      "handler": "Helpline.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/helplines/:_id",
+      "handler": "Helpline.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/helplines",
+      "handler": "Helpline.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/helplines/:_id",
+      "handler": "Helpline.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/helplines/:_id",
+      "handler": "Helpline.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
