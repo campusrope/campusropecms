@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "trending",
+  "info": {
+    "name": "trending",
+    "description": "trending news information"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string"
+    },
+    "createdBy": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "client": {
+      "model": "client"
+    },
+    "topic": {
+      "model": "topic"
+    }
+  }
+}

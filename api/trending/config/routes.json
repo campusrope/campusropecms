@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trendings",
+      "handler": "Trending.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trendings/count",
+      "handler": "Trending.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trendings/:_id",
+      "handler": "Trending.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trendings",
+      "handler": "Trending.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trendings/:_id",
+      "handler": "Trending.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trendings/:_id",
+      "handler": "Trending.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
