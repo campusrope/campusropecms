@@ -16,9 +16,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text"
-    },
     "youtubeUrl": {
       "type": "string",
       "required": true
