@@ -4,15 +4,17 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "database": "campusrope",
-        "host": "127.0.0.1",
-        "srv": false,
-        "port": 27017,
-        "username": "",
-        "password": ""
+        "host": "${'ds145053.mlab.com' || process.env.DATABASE_HOST || '127.0.0.1'}",
+        "port": "${'45053' || process.env.DATABASE_PORT || 27017}",
+        "srv": "${process.env.DATABASE_SRV || false}",
+        "database": "${'campusrope' || process.env.DATABASE_NAME || 'strapi'}",
+        "username": "${'campusrope' || process.env.DATABASE_USERNAME || ''}",
+        "password": "${'uniteall1' || process.env.DATABASE_PASSWORD || ''}",
+        "ssl": "${process.env.DATABASE_SSL || false}"
       },
       "options": {
-        "authenticationDatabase": ""
+        "ssl": "${process.env.DATABASE_SSL || false}",
+        "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
       }
     }
   }
