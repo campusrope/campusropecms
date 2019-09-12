@@ -41,10 +41,8 @@
       "type": "string"
     },
     "state": {
-      "unique": true,
-      "default": "national",
-      "required": true,
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
